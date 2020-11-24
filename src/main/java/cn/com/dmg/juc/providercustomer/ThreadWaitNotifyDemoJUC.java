@@ -14,8 +14,8 @@ class Resource{
 
     //+1
     public void increment() throws InterruptedException{
+        lock.lock();
         try {
-            lock.lock();
             //1.判断
             while (number!=0){
                 //this.wait();

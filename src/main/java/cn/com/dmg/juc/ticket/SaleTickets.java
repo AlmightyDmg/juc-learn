@@ -1,4 +1,4 @@
-package cn.com.dmg.juc;
+package cn.com.dmg.juc.ticket;
 
 
 import java.util.concurrent.locks.Lock;
