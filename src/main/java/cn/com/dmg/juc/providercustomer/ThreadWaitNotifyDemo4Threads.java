@@ -3,7 +3,7 @@ package cn.com.dmg.juc.providercustomer;
 /**
  * 这个类有两个生产者，两个消费者，会出现多加，多减的问题
  */
-public class ThreadWaitNotifyDemo1 {
+public class ThreadWaitNotifyDemo4Threads {
 
     public static void main(String[] args) {
         AirContitioner airContitioner = new AirContitioner();
