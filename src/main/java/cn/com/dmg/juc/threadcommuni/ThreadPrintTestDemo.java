@@ -1,4 +1,4 @@
-package cn.com.dmg.juc;
+package cn.com.dmg.juc.threadcommuni;
 
 
 import java.util.concurrent.locks.Condition;
