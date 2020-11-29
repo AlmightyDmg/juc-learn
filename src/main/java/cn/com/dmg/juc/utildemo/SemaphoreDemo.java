@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 public class SemaphoreDemo {
 
     public static void main(String[] args) {
-        Semaphore semaphore = new Semaphore(3);//模拟3个停车位
+        Semaphore semaphore = new Semaphore(3);//模拟3个停车位  //等于1的时候相当于一个锁，一次只能执行一个线程
 
         for (int i = 1; i <=6; i++) //模拟6部汽车
         {
