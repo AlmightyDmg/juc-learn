@@ -1,8 +1,7 @@
-package notsafethread;
+package cn.com.dmg.juc.notsafethread;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.CopyOnWriteArraySet;
 
 /**
