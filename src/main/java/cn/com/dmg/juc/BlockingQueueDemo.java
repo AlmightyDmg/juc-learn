@@ -20,9 +20,10 @@ public class BlockingQueueDemo {
 //        System.out.println(blockingQueue.add("a"));
 //        System.out.println(blockingQueue.add("b"));
 //        System.out.println(blockingQueue.add("c"));
+//        //检查队首
 //        System.out.println(blockingQueue.element());
-
-        //System.out.println(blockingQueue.add("x"));
+//
+//        System.out.println(blockingQueue.add("x"));
 //        System.out.println(blockingQueue.remove());
 //        System.out.println(blockingQueue.remove());
 //        System.out.println(blockingQueue.remove());
@@ -40,7 +41,7 @@ public class BlockingQueueDemo {
 //         blockingQueue.put("a");
 //         blockingQueue.put("b");
 //         blockingQueue.put("c");
-//         //blockingQueue.put("x");
+//         blockingQueue.put("x");
 //        System.out.println(blockingQueue.take());
 //        System.out.println(blockingQueue.take());
 //        System.out.println(blockingQueue.take());
