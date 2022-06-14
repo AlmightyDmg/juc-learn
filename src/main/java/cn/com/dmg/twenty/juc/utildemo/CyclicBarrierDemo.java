@@ -1,4 +1,4 @@
-package cn.com.dmg.juc.utildemo;
+package cn.com.dmg.twenty.juc.utildemo;
 
 import java.util.ArrayList;
 import java.util.List;

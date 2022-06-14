@@ -1,4 +1,4 @@
-package cn.com.dmg.forkjoin;
+package cn.com.dmg.twenty.forkjoin;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ForkJoinPool;
@@ -56,4 +56,4 @@ public class ForkJoinDemo {
         forkJoinPool.shutdown();
     }
 }
- 
+

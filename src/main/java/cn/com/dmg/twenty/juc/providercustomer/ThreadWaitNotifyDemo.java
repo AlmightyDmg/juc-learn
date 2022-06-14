@@ -1,4 +1,4 @@
-package cn.com.dmg.juc.providercustomer;
+package cn.com.dmg.twenty.juc.providercustomer;
 /**
  * 题目：
  *      现在两个线程，可以操作初始值为零的变量

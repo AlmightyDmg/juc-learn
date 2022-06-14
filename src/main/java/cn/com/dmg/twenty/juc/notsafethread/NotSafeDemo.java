@@ -1,4 +1,4 @@
-package cn.com.dmg.juc.notsafethread;
+package cn.com.dmg.twenty.juc.notsafethread;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;

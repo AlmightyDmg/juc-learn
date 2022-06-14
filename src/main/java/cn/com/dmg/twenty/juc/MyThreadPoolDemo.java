@@ -1,7 +1,5 @@
-package cn.com.dmg.juc;
+package cn.com.dmg.twenty.juc;
 
-import java.util.Arrays;
-import java.util.List;
 import java.util.concurrent.*;
 
 /**

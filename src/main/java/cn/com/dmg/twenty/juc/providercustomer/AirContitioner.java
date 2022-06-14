@@ -1,4 +1,4 @@
-package cn.com.dmg.juc.providercustomer;
+package cn.com.dmg.twenty.juc.providercustomer;
 
 /**
  * 资源类

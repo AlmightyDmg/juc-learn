@@ -1,4 +1,4 @@
-package cn.com.dmg.stream;
+package cn.com.dmg.twenty.stream;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

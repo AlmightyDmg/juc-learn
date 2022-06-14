@@ -1,4 +1,4 @@
-package cn.com.dmg.juc.providercustomer;
+package cn.com.dmg.twenty.juc.providercustomer;
 
 /**
  * 这个类有两个生产者，两个消费者，会出现多加，多减的问题

@@ -1,4 +1,4 @@
-package cn.com.dmg.juc;
+package cn.com.dmg.twenty.juc;
 
 @FunctionalInterface
 interface Foo{
