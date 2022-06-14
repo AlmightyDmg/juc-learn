@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
+import java.util.concurrent.BrokenBarrierException;
+import java.util.concurrent.CyclicBarrier;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -75,7 +77,17 @@ public class StreamDemo {
         consumer.accept("javaXXXX");
 
 //T get(); 供给型接口，无参数，有返回值
-        Supplier<String> supplier =()->{return UUID.randomUUID().toString();};
+        CyclicBarrier cyclicBarrier = new CyclicBarrier(2,()->{
+        });
+        Supplier<String> supplier =()->{
+            try {
+                cyclicBarrier.await();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (BrokenBarrierException e) {
+                e.printStackTrace();
+            }
+            return UUID.randomUUID().toString();};
         System.out.println(supplier.get());
 
 

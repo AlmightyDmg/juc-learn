@@ -1,5 +1,7 @@
 package cn.com.dmg.juc.utildemo;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 
@@ -8,7 +10,15 @@ import java.util.concurrent.CyclicBarrier;
  */
 public class CyclicBarrierDemo {
     public static void main(String[] args) {
+        List<String> list = new ArrayList<>();
+        //不会阻塞主线程
         CyclicBarrier cyclicBarrier = new CyclicBarrier(7,()->{
+            try {
+                Thread.sleep(10000);
+                System.out.println(list.size());
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             System.out.println("集齐七颗龙珠，召唤神龙！");
         });
 
@@ -16,6 +26,7 @@ public class CyclicBarrierDemo {
             final int tempInt = i;
             new Thread(()->{
                 System.out.println(Thread.currentThread().getName() + "\t收集到第" + tempInt + "颗龙珠");
+                list.add(String.valueOf(tempInt));
                 try {
                     cyclicBarrier.await();
                 } catch (InterruptedException e) {
@@ -25,5 +36,7 @@ public class CyclicBarrierDemo {
                 }
             },String.valueOf(i)).start();
         }
+
+        System.out.println(Thread.currentThread().getName() + "\t 班长关门走人");
     }
 }

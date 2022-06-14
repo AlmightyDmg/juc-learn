@@ -33,6 +33,7 @@ public class MyThreadPoolDemo {
                     System.out.println(Thread.currentThread().getName() + "\t 办理业务");
                 });
             }
+            System.out.println("this is main Thread");
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -66,5 +67,5 @@ public class MyThreadPoolDemo {
     }
 
 }
- 
- 
+
+

@@ -22,7 +22,7 @@ import java.util.concurrent.CopyOnWriteArraySet;
  */
 public class NotSafeDemo {
     public static void main(String[] args) {
-
+        listNoSafe();
     }
 
 
